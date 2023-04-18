@@ -1,0 +1,507 @@
+\providecommand{\main}{../}
+\providecommand{\cwd}{.}
+\renewcommand{\cwd}{\main/intro}
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+% Introduction.
+\chapter{Introduction}
+Aerosols dictate a wide-range of climatic activities, such as forming cloud droplets at low RH, which would otherwise require impractical RH values to form. It also plays am important role in radiative heating and cooling. Apart from climate effects it is the major cause of air-pollution . Nevertheless, there is a close feedback loop of pollution and climate effects caused by aerosols. Aerosols also perturbs the monsoon. So, it becomes important to study both effects and on a greater scale both temporal and spatial. \\
+
+Aerosol Optical Depth (AOD) evolves as a way to study the aerosol loading distribution. Looking over a wide temporal scale, we can observe that a dust event in Sahara results in rainfall over the Indian Subcontinent. In simplest term, AOD is the extinction of the radiation caused by the scattering and absorption by the aerosols. It measured by the state-of-the-art satellite sensors like MODIS and MISR, as well as ground-based sensors like AERONET, SKYNET, ARFINET etc. Nevertheless, Each instrument has some caveats and conduciveness. \\
+
+AOD not only quantifies the aerosol loading, but also the composition of them, as aerosols having different chemical composition, scatters and absorbs differently. AOD measuring instruments can be coupled with an emission inventory (like, SMOG) to produce a source analysis.
+
+Through this thesis, we study the approaches to present the AOD trend over India, based on the existing literatures, to produce an inter-comparative analysis and bring out our findings based on correlation-causality analysis. 
+
+
+\chapter{Background and Theory}
+\label{chap:intro}
+\section{Aerosols}
+Aerosols are colloidal systems of liquid/solids suspended in air or gas. They are formed by the conversion of gases to particles or by disintegration of liquids or solids [\cite{friedlander2000smoke}]. For scale, the best ball pen money can buy is Pentel RSVP fine-tip, with a 0.5 mm pin head. If one goes on collecting 500 nm particles (actually rather large when it comes to urban aerosols) out of air, it would be possible that one could fit a million of these particles on the tip of that pen [\cite{sai:16}]. Sources of aerosols are sea-spray, vehicular exhaust, by chemical reactions etc. The ubiquitous nature of aerosols and its interaction with almost every physical phenomena, opens up numerous questions for us, which at their fundamental level, are difficult to solve. Aerosols have a wide range of impact ranging from disease transmission to cloud formation. Abound in natural and anthropogenic system, they are highly dynamic, and dictate a variety of phenomena.  Though small, their applications finds a wide range. From the fabrication of optical fibres, microelectronics, nano- chips and sensors, pharma-industry etc. This area of study has taken its birth from a physical experiment done by R.A. Milliken on Oil-Droplets.\\
+
+Aerosols are quite necessary when it comes to rain, because cloud vapors need a "seed" to condense upon,( otherwise, in the absence of aerosols we would need nearly 700 $\%$ RH for water droplet to nucleate) which are none other than aerosol particles whose size are greater than the Koehler radius [\cite{article}] . Apart from polluting the earth's atmosphere and causing adverse health effects, they have a wide impact on earth's radiative balance and therefore, on climate. This is because 
+Aerosols interacts with the electromagnetic waves and they absorb, scatter or both simultaneously. Most of the aerosols have their sizes comparable to the wavelength of visible part of the electromagnetic radiation (390-750 nm). Hence, their scattering is governed by Mie theory. Scattering of aerosols results in what is referred to in vernacular as "smog".\\
+
+The scattering and absorbing property of aerosols results in altering the temperature profile of the earth and thus contributing to the hyper-object, called the "Climate Change".
+
+
+
+
+\section{Aerosols Size Categorization}
+The size distribution of aerosols are highly dynamic. For, making their study simpler, two borad categories are developed. They are \textemdash Fine mode (FM, which further bifurcates into Ultrafile mode, Accumulation  mode), and Coarse mode (CM).
+\begin{table}[htbp]
+  \caption{Size categorization of Aerosols.}
+  \begin{center}
+  \begin{tabular}[c]{|c|r|} \hline
+    \textbf{Fine Mode} $\le$ 2.5 $\mu$m \hline& \textbf{Coarse mode} 2.5-10 $\mu$m\\ 
+     \textbf{Ultrafine mode} < 0.1 $\mu$m $\l$  \textbf{Accumulation mode} 0.1-2.5 $\mu$m &  \\
+   
+     \hline
+  \end{tabular}
+  \label{tab:AOD_conditions}
+  \end{center}
+\end{table}
+
+\section{Aerosol Optics}
+Aerosols interfere with the electromagnetic radiation and in the process they absorb some part of the radiation and convert it into heat energy. This heat energy is then transported into the surrounding atmosphere. While, other part's direction is changed, which is known as scattering. In the visible range, which is what important to us, scattering dominates over absorption. Behaviour of aerosols with light differs from that of the gases, because of its size-range. 
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=0.5]{conclusion/images/1.png}
+    \caption {Aerosol behaviour with electromagnetic (light) wave.}
+  \label{fig:aero-optics}
+  \end{center}
+\end{figure}
+\subsection{Scattering} 
+The prime radiative effect of aerosol is its scattering ability, which is described by Mie scattering, which is none other than the solutions of Maxwell equation of electrodynamics of interaction between an electromagnetic plane wave and a homogeneous sphere. The aerosols are considered as spherical which makes it much simpler to arrive at an explicit equation. Since, aerosols are of the similar size as compared to the wavelength of visible part of electromagnetic radiation, hence its scattering is  different from that observed by gas molecules (Rayleigh Scattering) and by large geometrical objects (Geometric scattering).\\
+
+Sulphates, nitrates and sea-salt aerosols can be considered as purely scattering aerosols, at visible wavelengths. The scattering increases the fraction of solar radiation reaching back to the space, thus exerts a negative radiative forcing, hence cools the climate. 
+\subsection{Absorption}
+Aerosols absorb the radiation and convert the electromagnetic energy to heat energy. Thus, it can exert positive as well as negative radiative forcing. If the aerosols such as black carbon (BC), which are purely absorptive, are present above the clouds, exert a positive radiative forcing and otherwise, exert a negative radiative forcing. The cloud acts as a purely reflecting surface. White clouds shows dominant effects. Majority of the latest climate models show a cooling effect by cloud adjustment in response to BC forcing [\cite{article1}]. \\
+
+It is noteworthy that, we see the blue sky because of Rayleigh Scattering by the gas molecules. Also, shortwave scattering are dominant for this type of scattering, hence the scattered light is mostly bluish. And, the white color of clouds is because of Mie Scattering, which is not so much wavelength dependent, hence scatter lights of nearly all wavelength. It is also responsible for the white glare around the sun.
+\section{Radiative effects of Aerosols}
+Aerosols affects the heat balance of the earth's system, greatly, absorption (direct effect) and by aerosol-cloud interactions, depositing on glaciers (semi-direct and indirect effects). \\
+
+A \textbf{direct effect} occurs when aerosols interacts with incoming sun's radiation. This changes the surface reflectance of the earth. If there is a scattering by the aerosols, then aerosols directly reflect the radiation by themselves or by interacting with the clouds. This results in less radiation reaching the earth's surface leading to a net cooling effect. This is termed as (-) radiative forcing.\\
+
+\textbf{Indirect effect} is observed when aerosols acts as a Cloud-Condensation Nuclei (CCN) and Ice-Nucleating Particles (INP). The aerosols present near the cloud acts as a surface for the water droplets to condense upon. If there is more pollution, there will be more aerosols, hence there will be more CCN and more cloud droplets of smaller size would be formed. The incoming solar radiation would be reflected more. This would produce a local cooling effect [\cite{ComparisonofMeasurementsofCloudDropletsandCloudNuclei}].
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=0.5]{twomeyEffect.png}
+    \caption {Increased CCN can result in more cloud reflectance, and locally cooling, \textbf{Twomey Effect}.}
+  \label{fig:aero-optics}
+  \end{center}
+\end{figure}
+The absorbing aerosols, in general have a (+) radiative forcing, but still, their interaction with clouds can produce a slight cooling effect.\\
+\newpage
+Another radiative effect of aerosols, is when aerosols deposit on the surface of the glaciers, and if the absorbing aerosols, such as soot particles, does so, then the glaciers warms and this result in their melting. Similar episodes of soot depositions on the arctic snowpack, when soot particles of anthropogenic origin are transported to northern region [\cite{CLARKE19852045}].
+
+
+
+\section{Measuring Aerosol Properties}
+The aerosol properties such as composition, size distribution, optical properties, hygroscopicity, mixing states, etc., are very crucial for studying their effect on climate system.  Measuring their properties starts right from sampling them. They can be sampled from hot air balloons, aircrafts like NASA Lockheed P3 Orion [\cite{article2}], a four-engined, turboprop aircraft, and remote sensing. The real time sampling is known as \textit{in-situ} sampling, which can accurately measure the mass concentration, scattering and/or absorbing properties, chemical composition etc. The in-situ measurements are comprehensive and accurate. While remote sensing are easy to operate but, at the cost of measurement accuracy.\\
+
+To delve into the process of understanding the wide-range effects of aerosol, it is necessary to explain aerosol characteristics with high spatial and temporal resolution. Few quantities like Aerosol Optical Depth (AOD), Single Scattering Albedo (SSA), Angstrom Exponent($\aplha$), Phase function ($P(cos(\Theta))$) are commonly used. 
+\subsection{Aerosol Optical Depth}
+\textbf{Definition} It is the integration of aerosol extinction coefficient($\beta_e$) from the top of the atmosphere (TOA) to the surface. \\
+Physically, it measures the quantity of direct solar radiation prevented from reaching the ground by the total column of aerosol loadings [\cite{article1}]. Extinction is the amount of radiation lost due to scattering and absorption, given by Beer-lambert's Law. Before AOD, we get \textbf{optical depth} of the atmosphere (from now, we will denote as optical depth), $\tau_{\lambda} ^ {atm}$ which is a measure of the atmospheric transparency at wavelength $\lambda$. It should be noted that $\tau$ is dimensionless.
+\begin{equation} 
+    \tau_{\lambda} ^ {atm} = \int_{0}^{s^{TOA}}\beta_e (s) ds
+\end{equation}
+Generally, optical depth is calculated for normal depth, for which the solar zenith angle is taken as zero radians. Then, the normal optical depth for an atmospheric column of height $z$ is given by 
+\begin{equation}
+     \tau_{\lambda} ^ {atm} = \int_{0}^{z^{TOA}}\beta_e (z) dz
+    \end{equation}
+Thus, equation (2.2) gives us the radiant energy attenuated by all the species present in the atmosphere like, water droplets, clouds, gases, molecules, etc. So, for calculating the AOD we have to subtract out these extinction values. 
+\begin{equation}
+     \tau_{\lambda} ^ {atm} = \int_{0}^{z^{TOA}}\beta_e^{aerosols}(z) dz + \int_{0}^{z^{TOA}}\beta_e^{gases}(z) dz + \int_{0}^{z^{TOA}}\beta_e^{clouds}(z) dz + \int_{0}^{z^{TOA}}\beta_e^{molecules}(z) dz
+\end{equation}
+which can be simplified to \textemdash
+\begin{equation}
+    \tau_{\lambda} ^ {atm} = \tau_{\lambda} ^ {aerosols} + \tau_{\lambda} ^ {clouds} + \tau_{\lambda} ^ {gasea} + \tau_{\lambda} ^ {molecules} 
+\end{equation}
+So, the AOD can be written as \textemdash
+\begin{equation}
+    \tau_{\lambda} ^ {aerosols} = \int_{0}^{z^{TOA}}\beta_e^{aerosols}(z) dz
+\end{equation}
+For retrieving AOD values from space satellites, we have to use a measurable quantity, like voltage or intensity. According to [\cite{HOLBEN19981}], the total optical depth $\tau_{\lambda} ^ {atm}$ , from a device such as sun photometer can be obtained as  \textemdash 
+\begin{equation}
+    V(\lambda) = V_o(\lambda) d^2 exp [-\tau_{\lambda} ^ {atm} \times m]
+\end{equation}
+Where, V is the digital voltage measured at wavelength $\lambda$, $V_o$ is the extraterrestrial voltage, d is the ratio of the average to the actual Earth-Sun distance, m is the optical air mass. Further, $\tau_{\lambda} ^ {aerosols}$ can be expressed as \textemdash
+\begin{equation}
+    \tau_{\lambda} ^ {aerosols} = \tau_{\lambda} ^ {atm} - \tau_{\lambda} ^ {water} - \tau_{\lambda} ^ {rayleigh} - \tau_{\lambda} ^ {O3} - \tau_{\lambda} ^ {CO2} - \tau_{\lambda} ^ {CH4}.
+\end{equation}
+
+
+
+
+
+
+
+%To change the title page for different degrees just change the option
+%from \verb+PhD+ to one of \verb+MS+, \verb+MTech+ or \verb+BTech+.
+%The dual degree pages are not supported yet but should be quite easy
+%to add.  The title page formatting really depends on how large or
+%small your thesis title is.  Consequently it might require some hand
+%tuning.  Edit your version of \verb+iitddiss.cls+ suitably to do this.
+%I recommend that this be done once your title is final.
+
+%To write a synopsis simply use the \verb+synopsis.tex+ file as a
+%simple template.  The synopsis option turns this on and can be used as
+%shown below.
+%\begin{verbatim}
+%\documentclass[PhD,synopsis]{iitddiss}
+%\end{verbatim}
+
+%Once again the title page may require some small amount of fine
+%tuning.  This is again easily done by editing the class file.
+
+
+
+\newpage
+\section{AOD and Pollution}
+Higher AOD value over a region means that that region is heavily loaded with aerosols. Higher AOD means more extinction and thereby more aerosols.
+%Fig.~\ref{fig:iitd} shows a simple figure for illustration along with
+%a long caption.  The formatting of the caption text is automatically
+%single spaced and indented.  Table~\ref{tab:sample} shows a sample
+%table with the caption placed correctly.  The caption for this should
+%always be placed before the table as shown in the example.
+
+
+
+
+\begin{table}[htbp]
+  \caption{Atmospheric conditions corresponding to different AOD values.}
+  \begin{center}
+  \begin{tabular}[c]{|c|r|} \hline
+    AOD & Atmospheric Condition \\ \hline
+     0 &  Clear sky, free from aerosols  \\
+     0.02 &  Very clean, usually over isolated areas \\
+    0.2  &  Fairly clean air  \\
+    0.6  &  Polluted air  \\
+    1.5  &  Heavy smoke/ dust event/ volcanic eruption  \\
+    >3 &  Solar disk is obscured  \\
+     \hline
+  \end{tabular}
+  \label{tab:AOD_conditions}
+  \end{center}
+\end{table}
+\chapter{Methodology}
+\section{AOD Measurements}
+AODs can be derived by using two ways, viz., ground based measurement and by satellite measurement.  Ground based measurement includes instruments like sun photometer, which measures the sun's radiance in terms of digital voltage. Obviously, the digital voltage (a proxy for incoming flux) doesn't comes out to be equal to what is actually at the top of the atmosphere. This is because of the scattering and absorption phenomena. From this, after knowing the air mass, we can calculate the observed solar-radiance, V, at any wavelength $\lambda$. And a plot showing its variation with time is obtained using Langley extrapolation technique. The so obtained plot is called as Langley plot.\\
+
+Another way of retrieving the AODs are satellite based measurement.Generally,  Moderate Resolution Imaging Spectroradiometer (MODIS) and Multi-angle Imaging Spectroradiometer (MISR) which are based on satellite Terra. 
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=0.5]{intro/mol4_04_1.jpg}
+    \caption {Sun photometer.}
+  \label{fig:sun-photo}
+  \end{center}
+\end{figure}
+\subsection{Ground-based Measurement}
+The need for the quantitative measurement of aerosol loading over the atmosphere is curated by AOD values. It is being increasingly felt important by the scientific community and cohorts. To measure AOD, we employ sun photometer and along with different inversion algorithms. For e.g., NASA operates a global surface network using sky-scanning photometers. The network is known as \textemdash the Aerosol Robotic Network (AERONET), and is now spread over 800 sites, covering 
+ large aerosol source regions [\cite{HOLBEN19981}]. 
+
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=0.5]{intro/AERONET-ground-stations-worldwide-Source-NASA-https-aeronetgsfcnasagov_W640.jpg}
+    \caption {AERONET locations. (Source: NASA,https://aeronet.gsfc.nasa.gov/).}
+  \label{fig:aero-net}
+  \end{center}
+\end{figure}
+In countries lying in the south Asian region, like ours, the Indian Space Research Organization (ISRO) has set up a national network of aerosol observatories, named as\textemdash the Aerosol Radiative Forcing over India Network (ARFINET), with an objective to generate a long term aerosol data-set over the Indian sub-continent region. This activity was initiated in mid-1980s.
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=1]{intro/ARFINET-14102016.jpg}
+    \caption {ARFINET ground stations  (Source:ISRO, \\https://spl.gov.in/SPL/index.php/atrf-research/sdgas/arfinet).}
+  \label{fig:aero-netindia}
+  \end{center}
+\end{figure}
+The figure \ref{fig:aero-netindia} shows the locations of ARFINET stations, highlighted in circles, to provide us a continuous measurement of various aerosol properties. It covers regions such as coastal, remote, mainland, arid, semi-arid, mountainous, island and adjoining oceanic regions [\cite{article5}].\\
+To estimate the AODs over these regions, Multi-Wavelength Radiometers (MWR) are used, which is developed in Space Physics Laboratory (SPL), Thiruvananthapuram, Kerala. Fly-wheel technique is used to make a continuous measurement. Ten distinct wavelength range are selected to obtain  spectral AOD values, which are centered at \textemdash 380, 400, 500, 600, 750, 850, 935 and 1025 nm, with a full-width half-maximum (FWHM) value of 5 nm [\cite{article5}]. Calibration and validation are done by using MFRSR ( Multi-Filter Roatating Shadow and Radiometer), microtop Sun Photometer (calibrated) and EKO Sun Photometer [\cite{article5}]. The correlation coefficients of the linear fit of the measured plot comes out to be 0.99, 0.88 and 0.92 [\cite{acp-20-3965-2020}].\\
+
+But, discrepancies arises due to the inevitable land and climate heterogeneity, which makes the satellite derived data, less accurate. Moreover, heterogeneous surface reflectance, uncertainties in cloud contamination along with inefficacy of the AOD retrieval algorithms also poses a significant amount of errors.
+
+\begin{table}[h!]
+		\caption{Details of ARFINET stations.}
+		\label{tabletest}
+		\begin{center}
+  			\begin{tabularx}{\textwidth}{ X X X }
+    				\hline
+    				Sl. No. & Station Name & Instiute \\ 
+    				\hline
+    				1 & Agartala & Tripura University \\ 
+    				2 & Agra & Dayalbagh Educational Institute, Agra \\ 
+    				3 & Ahmedabad & Physical Research Laboratory \\
+                        4 & Anantpur & Sri Krishnadevaraya University \\
+                        5 & Bengaluru & Indian Institue of Science \\
+                        6 & Bhubaneshwar-IMMT  & Institue of minerals and Matreial Technology \\
+                        7 &  Bhubaneshwar-IIT & IIT Bhubaneshwar \\
+                        8 & Bikaner  & Currently not operational \\
+                        9 & Challakere & IISc \\
+                        10 & Chennai & SRM University \\
+                        11 & Dehradun & Yogesh Kant\\
+                        12 & Delhi& National Physical Laboratory \\
+                        13 & Dibrugarh & Dibrugarh University \\
+                        14 & Goa & Goa University\\
+                        15 & Gorakhpur & DDU Gorakhpur University \\
+                        16 & Hanle & Cureently not operational\\
+                        17 &  Himansh & Currently not operational \\
+                        18 & HYD-NRSC & National Remote Sensing Centre \\
+                        19 & HYD-TIFR & Tata Institute of Fundamental Research, Hyderabad \\
+                        20 & Imphal & Jaisalmer \\
+                        21 &  Jiasalmer & Currently noyt operational \\
+                        22 & Jodhpur & Currently not operational \\
+                        23 & Kadapa & Yogi Vemana University \\
+                        24 & Kolkata & University of Calcutta \\
+                        25 & Kanpur & Currently not operational \\
+                        26 & Kharagpur & Currently not operatioal\\
+                        27 & Kullu & GBPI Himalayan Environment and Development, Kullu \\
+                        28 & Lachung & Space Physics Laboratory, Trivandrum \\
+                        29 & Minicoy & Currently not operational \\
+                        30 & Mysore & Currentl not operational \\
+                        31 & Nagpur & Regional Remote Sensing Centre \\
+                        
+                        
+    				\bottomrule
+  			\end{tabularx}
+		\end{center}
+	\end{table}
+ \newpage
+\begin{table}[h!]
+		\caption{Details of ARFINET stations.}
+		\label{tabletest}
+		\begin{center}
+  			\begin{tabularx}{\textwidth}{ X X X }
+    				\hline
+    				Sl. No. & Station Name & Instiute \\ 
+    				\hline
+    				32 & Nainital & Aryabhatta Research Institute of Observational Sciences\\
+                        33 & Naliya & Currently not operational \\
+                        34 & Ooty & Tamilnadu Agricultural University, Coimbatore \\
+                        35 & Patiala & Punjabi University \\
+                        36 & Port-Blair & ISTRAC Ground Station, Port Blair\\
+                        37 & Ponmudi & Space Physics Laboratory, Trivandrum\\
+                        38 & Pune & Indian Institute of Tropical Meterology, Pune \\
+                        39 & Rajkot & Saurashtra University, Rajkot \\
+                        40 & Ranchi & Currently not operational \\
+                        41 & Shillong & Northeastern Space Application Centre, Shillong \\
+                        42 & Tawang & Space Physics Laboratory, Trivandrum \\
+                        43 & Trivandrum & Space Physics Laboratory \\
+                        44 & Udaipur & M.L. Sukhadia University \\
+                        45 & Varanasi-BHU & Banaras Hindu University \\
+                        46 & Vanarasi-IIT & Banaras Hindu University \\
+                        47 & Vijaywada & PSri Venkatateshwara University \\
+                        48 & Visakhapatnam & Andhra University \\
+                        
+
+                        
+                        
+    				\bottomrule
+               \end{tabularx}
+		\end{center}
+	\end{table}
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+\newpage
+\section{Satellite-based Measurement}
+Satellite based AODs are easy to obtain, albeit at the cost of accuracy. Hence, a validation of obtained data should be done using the ground-based measured values before going for extrapolations. [\cite{article6}] performed validation study for MODIS-Microtop using two algorithms, viz., Deep Blue and Dark Target algorithms, and obtained a correlation coefficients as \textemdash 0.55 and 0.69 for Terra and Aqua, respectively, using Dark Target algorithm and, 0.43 and 0.50 for Terra and Aqua, respectively, using Deep Blue algorithm. All measurements are done for 550 nm wavelength. Deep Blue algorithm is used for Rann of Kuchchh and Dark Target is used for other regions in Gujarat. \\
+\subsection{Dark Target Algorithm}
+This algorithm starts right from taking the surface reflectance at 470 and 660 nm, using some empirical relations. Aerosol type is also determined from the path radiance values, and by the geographical region of study. For e.g., coastal regions would have mostly sea-spray aerosols, arid regions like Jaipur, Jodhpur etc., would have wind blown dust and silica particles mostly, densly populated, industrialised, urban areas would have mostly fine mode aerosols due to gas-to-particle formation, Indo-Gangetic Plain (IGP) would have mostly, carbonaceous aerosols due to biomass burning and agricultural activities.
+Sources of error in satellite based measurement are particularly from cloud contamination in all of them, land, ocean or atmospheric measurements. Cloud contamination include swelling of cloud droplets due to excessive humidification and shadowing of clouds on the ground.\\
+
+After that, cloud screening is done and gas absorption correction is performed. It should be noted that DT is valid for surface reflectance less than 0.15, above which the algorithms fails. Hence, this algorithm is inefficient for regions like Rann of Kuchchh, Himalayan, and other snow-capped areas like Kullu, and Himachal. \\
+
+Polarisation is also taken into account along with the seasonal and angular dependencies of surface reflectances.
+A substantial amount of error also arises from the heterogeneity in the surface reflectance. Surface reflectance varies greatly over the Earth's surface. Ocean surface provides a dark background against which atmospheric aerosols are mapped. Errors increase significantly when, the surface are ice, snow and desert. In satellite based measurement, the prime concern is to eliminate the error nucleated from surface reflectance. \\
+
+\subsection{Deep Blue Algorithm}
+This algorithms is developed mainly for smoothing the process of AOD retrieval over arid, semi-arid and urban areas. The underlying principle is that, the surface reflectance at blue is less as compared to the red protion of the visible spectrum. \\
+
+The basic assumptions are laid \textemdash the surface under study is Lambertian surface, i.e., the reflected light is diffused uniformly in all directions, and, the surface is homogeneous.\\
+
+
+Firstly, surface reflectance is generated at $0.1^o \times 0.1^o$ latitude-longitude, at 412,0490 and 670 nm. After that, based on the look-up tables generated using the ground-based measurements and/or from the existing satellite data, maximum likelihood method is employed to estimate AODs and SSA from surface reflectance. This algorithm is valid when the surface reflectance is upto 0.3 (\cite{article6}). However, the AODs can also be retrieved for the surfaces having reflectance as high as 0.4 at 670 nm, only if the AOD comes out to greater than 0.7 i.e., for places having forest fires, dust events, volcanic eruption, heavily polluted regions\\
+
+Errors arises in this method, particularly from the changes in aerosol vertical profile, and uncertainty in aerosol shapes.
+
+\section{Caveats}
+\begin{itemize}
+    \item AODs obtained from satellite based measurement (e.g., MODIS, MISR) have high spatial coverage but lacks in temporal coverage.
+    \item AODs obtained from ground based measurement (e.g., AERONET, ARFINET) have high temporal coverage but lacks in spatial coverage.
+    \item Satellite based measurement requires inversion procedures (\cite{article7}).
+    \item Satellite based measurements usually are assessed relative to ground based observations [\cite{article7}].
+    \item The fate of the aerosols due to transport and their chemical transformation has been taken into account by both measurement techniques.
+    
+\end{itemize}
+
+Hence, there is a need for developing a system which have all the desired properties. Also, it should take proper concern of the transport and reactions of the aerosols, with meteorological parameters like RH, aerosol properties like hygroscopicity, so on and so forth.
+\newpage
+\section{Chemical Transport Models}
+Scientific cohorts have come up with climate models which incorporates aerosol transport, chemical reactions and meteorological changes in the atmosphere. CTM like Goddard Earth Observing System (GEOS)-Chem, the most popular among the scientific community, which is a three-dimensional model, takes into emissions data and puts forward the AODs. It is a reverse process to what we follow in the above two measurement techniques. An emission inventory is required and is coupled with the CTM to obtain AOD values. AOD values can be obtained from the $PM$ values easily. Emission estimates can be formed using models like Speciated Multi-pOllutant Generator, developed by the Indian Institute of Technology Bombay).
+
+\chapter{Results and Discussion}
+\section{AODs from ARFINET}
+ARFINET study is done mainly by [\cite{article5}]. The location included are 11 stations.
+\begin{table}[h!]
+		\caption{Details of ARFINET stations for trend analysis.}
+		\label{tabletest}
+		\begin{center}
+  			\begin{tabularx}{\textwidth}{ X X X }
+    				\hline
+    				Sl. No. & Station Name & Station ID \\ 
+    				\hline
+    				1 & Trivandrum & TVM\\
+                        2 & Vishakhapatnam & VSK \\
+                        3 & Mysore & MYS \\
+                        4 & Patiala & PTL\\
+                        5 & Anantapur & ATP\\
+                        6 & Hyderabad & HYD\\
+                        7 & Patiala & PTL\\
+                        8 & Dibrugarh & DBR \\
+                        9 & Port Blair & PBR \\
+                       10 & Kanpur & KNP\\
+                       11 & Minicoy & MCOH\\
+                    \bottomrule
+  			\end{tabularx}
+		\end{center}
+	\end{table}
+Back to nearly 25 years ago, ISRO started AOD measurements, under Aerosol Radiative Forcing over India (ARFI) project. The trend analysis done here is for AOD at 500 nm. \\
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=0.5]{intro/jgrd50898-fig-0003-m.jpg}
+    \caption {Temporal variation of AOD at 500 nm(\cite{article5}.}
+  \label{fig:aero-net1}
+  \end{center}
+\end{figure}
+\section{Temporal Trend}
+Clearly, from Fig. \ref{fig:aero-net1}the ARFI derived data at Trivandrum (TVM) and Vishakhapatnam (VSK) shows that AOD values shows an increasing trend with a steady rate. TVM and VSK both are coastal cities. VSK is more industrialised located on the east coast of India. This is an alarming condition for VSK, being a coastal region. Due to heavy industrialization, we see the rising plots. The base year for the AOD measurement was 1986 for TVM and 1988 for VSK. The AODs in these base year are 0.26 and 0.30 at TVM and VSK respectively, which was then fairly clean air. The above plot also shows that, aerosol loading always remains higher than TVM, which can be attributed to the heavy industrialization and marine transportation hub in VSK. These were the first regional measurements carried out in India. Also, there is a gap around the year 1992 in Fig. because of uncertainty produce to Pinatubo volcanic eruption. \ref{fig:aero-net1}\\
+\newpage
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=1]{intro/aod-overall.jpg}
+   \caption {Spatial variation of annual trend in AOD over Indian region. \cite{article5}.}
+  \label{fig:aero-net2}
+  \end{center}
+\end{figure}
+\subsection{Spatial Trend}
+Clearly, from the Fig. \ref{fig:aero-net2} we can see that, Minicoy has the highest annual rate of increase around 0.0208 AOD $year^{-1}$. The starting year for the measurement for MCOH was 2005, and the base AOD was 0.22, which represents a fairly clean air. \\
+We see a constant increasing trend over the Indo-Gangetic Plain with the rate of increasing is also increasing. GC (Gandhi College, Ballia) shows a negative trend due to its rural nature. It should be noted that GC is an AERONET station, but to improve the regional coverage, [\cite{article5}] have included in their study.
+\newpage
+\subsection{Seasonal Trend}
+[\cite{article5}] shows that AOD shows a significant increasing trend with a significant seasonal variability. The variation is quite oscillatory through advection and precipitation. Indian sub-continent experiences precipitation in summer monsoon from June to September. Only in this month, there is high RH and temperature. And, during the months, form December to March, the north-easterlies decreases the RH to a very low level, except over the southern peninsula. ATP and HYD, although in close proximity, shows contrasting trends in AODs. For ATP, being semi-arid and semi-rural area, we see a continuous negative trend from DJFM TO JJAS and the opposite for HYD.
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=0.5]{intro/season.jpg}
+    \caption {Seasonal changes in the spatial variation of AOD trend over Indian region [\cite{RAMACHANDRAN2012338}].}
+  \label{fig:aero-netindiaSeason}
+  \end{center}
+\end{figure}
+
+CLearly, from DJFM to JJAS, the continental air mass changes from dry to wet. In DJFM, the AODs are higher in locations like IGP due to heavy biomass burning due to winter season and stubble burning. Moreover, there plays a confinement effect as the aerosols are somewhat trapped between the Chota Nagpur Pleateu and Vindhya-Satpura Range. Also, due to less to no precipitation, the wet deposition is also less. GC always shows a negative trend. 
+\newpage
+\section{Satellite-derived AOD}
+The most popular satellite-derived AODs are from MODIS and MISR using Aqua and Terra. \cite{RAMACHANDRAN2012338} has done a detailed analysis for 35 (28 state capitals and 7 UTs) locations for the years 2000-2009. They have used MODIS, level 2, 10 km by  10 km grid for remote sensing, to exhibit spatial, seasonal and annual mean variations. 
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=1]{intro/AOD_MODIS.jpg}
+    \caption {Study locations of \cite{RAMACHANDRAN2012338}.)}
+  \label{fig:aero-netindiaSeason1}
+  \end{center}
+\end{figure}
+
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=1]{annual1.jpg}
+    \caption {Annual mean trends of AOD from 2000-2009 [\cite{RAMACHANDRAN2012338}.]}
+  \label{fig:aero-netIndiaSeason2}
+  \end{center}
+\end{figure}
+\newpage
+Among the north-west, north, east and north-east, Kolkata is most polluted at all times, while north-eastern capitals like Shillong, Kohima and Aizawl are the least polluted.\\
+
+Bhubaneshwar shows the strongest correlation, having $R^2$ value as 0.55 with a slope of 0.007, which is because of the rapid industrialization over the years. While, the highest slope as 0.008 is obtained for Dispur, although it is not so much industrialised. \\
+
+Dehradun, Shimla and Chandigarh shows a negative slope as $R^2$ equal to -0.003, -0.003 and -0.004, indicating a decrease in AOD value. In Chandigarh, the decrease in aerosol loading may be attributed due to decreasing in anthropogenic sources while in Dehradun and Shimla, it may be attributed to decrease in natural aerosol loading, since it is located in mountainous region.\\
+
+Among the eastern cities, we can easily see the decrement in aerosol loadings, in the year 2008-2009 for Patna, Ranchi and Bhubaneshwar, while at Kolkata it remains nearly the same. This may be due to heavy rainfall occurred due to Cyclone Alia. Kolkata shows no changes, because of high anthropogenic sources due to heavy industrialization and urbanization. Ranchi also suffered hail storms in the year 2007, because of high increase in pollution due to heavy urbanization of the city. It was unusual for Ranchi, to experience hails in the months of February-March.\\
+
+\newpage 
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=1]{intro/annual2.jpg}
+    \caption {Annual mean trends of AOD from 2000-2009 [\cite{RAMACHANDRAN20123}.]}
+  \label{fig:aero-netindiaSeason}
+  \end{center}
+\end{figure}
+\newpage
+Clearly, it is easily observable that Chennai is most polluted after Kolkata, with base AOD around 0.5. Mumbai, shows highest rate of increase in aerosol loading over it, which may be attributed due to heavy expansion of the city and construction activities. Anthropogenic pollution poses a great threat to the Mumbai residents. Raipur and Mumbai shows a high slope of 0.008 which may be attributed to industrialization in Raipur and anthropogenic source in Mumbai. While the slope is highest for Bengaluru as 0.013.\\
+
+Also, we see a constant decrease in AOD values for Trivandrum, which doesn't comply with the ARFINET measurements, where the slope was around 0.009. 
+\newpage
+\section{Chemical Transport Model-derived AODs}
+A robust and comprehensive model for studying the fate of aerosols due to chemical reactions and transport is missing. [\cite{article7}] tried to validate the CTM-derived AODs with the ground-based and satellite-based AODs. The red triangles in \ref{fig:aero-cv} shows AERONET locations. The AOD values are obtained from AERONET and were validated by the AODs obtained using GEOS-Chem and SMOG. The pie-chart shows the aerosol composition over that region.
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=1]{intro/LOCATIONS.png}
+    \caption {Averaged AOD values with the study location for 2012 [\cite{article7}.]}
+  \label{fig:aero-cv}
+  \end{center} 
+\end{figure}
+ Fig \ref{fig:aero-cv} shows that the highest aerosol loading is for IGP which is the most polluted region in the world. The compositions of aerosol loading in the IGP are mainly inorganic aerosol, and OC, released from biomass burning, agricultural emissions and other anthropogenic emissions. In IGP, Kanpur and Gandhi College (Ballia) has AERONET sensors. Gandhi College is in a rural area, in Ganga basin, 400 km east of Kanpur. The major source of aerosol emissions are biomass burning, crop waste, wood burning etc. But, since most of the times the Gandhi College is the downwind of Delhi, Kanpur and Lucknow, it experiences a mixture of urban and rural aerosol loading. Kanpur is purely an urban location, having a large number of industries. It experiences fossil fuel burning emissions and transported dust.
+ Fire occurrences due to crop residue burning also increases aerosol loading in the downwind regions to Delhi.
+ \newpage
+ \subsection{High Aerosol loading over the IGP}
+ Indo-Gangatic Plain is one of the most polluted regions in the world. This is because of its rapid industrialization and huge amount of agricultural activities. Population explosion is also seen in this region. Highly polluted cities are, namely, Delhi, Varanasi, Prayagraj, Patna, Bhagalpur, Kolkata, Ballia. One of the major precursor of high aerosol loading over IGP is the crop-residue burning, which caused 44,000-98,000 PM related premature deaths annually, from 2003-2019 \cite{article10}. Punjab and Haryana are the largest contributers of aerosols due to crop burning. Punjab itself, contributes to 40 percent deterioration of air quality in the IGP [\cite{article10}].\\
+ 
+ The dominant mode of size distribution is the fine mode, in the winters and post-monsoon seasons, due to crop-residue and biomass burning. And, in the pre-monsoons and monsoons, coarse mode is dominant due to transport of dust from the westerlies. Also, in these seasons, we see an overall increase in AOD, due to transport of mineral dust, by the westerlies from the Arabian and Thar desert.  The fine mode particles are dominant in the eastern and central IGP, while in the western region, coarse mode is dominant. Also, due to low boundary layer height, over IGP, the aerosols are trapped, which contributes to its higher aerosol loading and consequently, its highest AOD, as shown in Fig. \ref{fig:aero-cv}. \\
+
+ Due to excessive high burning of biomass and crop-residue burning, the ground based measurements, such as AERONET, sometimes produces erroneous results. 
+
+
+\newpage
+ \subsection{Intercomparision of the CTMs}
+ \subsubsection{SMOG vs GEOS-Chem}
+ SMOG inventories, since are developed in India, it would have a precise coverage, while GEOS-Chem would under-estimate the indoor emissions that cause ambient air pollution. SMOG incorporate the field-measurements that are carried our regionally. Hence, for a region level study, SMOG would provide us a cogent result.\\
+ \begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=0.2]{intro/SMOG_VS_GC.jpg}
+    \caption {Density plot of AOD simulated using SMOG and GEOS-Chem, for year 2012. (\cite{article7}.)}
+  \label{fig:aero-smog}
+  \end{center}
+\end{figure}
+Clearly, we can see that the linear regression line has a slope greater than 1. This indicates, that the results derived from them differ. This difference is observed because of the emission precursor gases [\cite{article7}]. Further, it was found by [\cite{article7}] that, SMOG inventory had, high values for BC, OC and inorganic aerosols as compared to the GEOS-Chem. Also, GEOS-Chem was able to simulate the fine mode particles effectively but lacks in simulating the coarse mode. It underestimated the dust loadings significantly. \\
+
+A study was carried out by [\cite{article7}], in which they compared AODs derived from AERONET and compared with SMOG and GEOS-Chem, and found that SMOG has better results in compliance what is observed in reality, that GEOS-Chem. The difference is mainly due to the large values of OC and BC in SMOG as compared to GEOS-Chem.
+\newpage
+\subsection{Spatial Variation Over India}
+ \begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=0.3]{intro/AOD_variation.jpg}
+    \caption {AOD variation over different regions in India. (\cite{article7}.)}
+  \label{fig:aero-var}
+  \end{center}
+\end{figure}
+Fig. \ref{fig:aero-var} shows the variation of AOD over six regions in India, at 550 nm.  These are simulated using SMOG (solid) and GEOS-Chem (hashed). We can clearly observe that, IGP has the highest aerosol loading.  The difference observed is discussed in the previous subsection. \\
+
+As discussed earlier, SMOG has higher values of AOD than GEOS-Chem, mainly due to high BC and OC values in SMOG inventory. Another caveat is that these two models under-estimates AODs at longer wavelengths, where the coarse particle distribution becomes more important. The difference of the simulated AOD goes as high as up to 30 percent \cite{article7}. 
+\newpage
+\section{Seasonal Variation \textemdash A bird's eye view-}
+Fig. \ref{fig:aero-months} shows that, we get the highest aerosol loading during May, which is because of the dust and pollutants transported from the west Arabian regions by the westerlies, and also because of low boundary layer which keeps these aerosols trapped. The reason behind highest aerosol loading in summer is due to the high temperature and stagnant air.\\
+
+During the monsoon period, JJAS, the AOD values is decreased because of wet depositions. India experiences easterlies from November to February and westerlies during March to October. So, pre-monsoon period, increases the aerosol loading over India and decreases it in the Pakistan and Khyber region, while, post-monsoon again increases the aerosol loading over Pakistan and Khyber by the crop-residue and bio-mass burning in India.\\
+
+We see an increase in the AODs over the IGP during the post-monsoon and winter period. This is because of high local biomass burning, wood and crop-residue burning. This is seen especially in less developed regions like the Eastern India.
+\begin{figure}[htpb]
+  \begin{center}
+    \includegraphics[scale=0.26]{intro/seasonal.jpg}
+    \caption {AOD-550 nm variation over the months in India. [\cite{article7}.]}
+  \label{fig:aero-months}
+  \end{center}
+\end{figure}
+\chapter{Conclusion}
+
+Based on the study that we done before, we put forward the following findings \textemdash
+\begin{enumerate}
+    \item IGP is the most polluted region over all the Indian Subcontinent, while Northern India is least polluted.
+    \item In the northern region, after Delhi, Jammu and Lucknow are the most polluted cities.
+    \item AOD also shows a seasonality variation, and depends substantially on the meteorological parameters like, wind velocity, RH so on and so forth.
+    \item In pre-monsoon, the aerosol loading and hence the AOD value is increased over the western region and IGP due to transport of dust from the Arab desert. 
+    \item IGP is least loaded with aerosols in the monsoon season, while heavily loaded in pre-monsoon and post-monsoon period and during winters, where the activities such as wood burning, biomass burning and crop-residue burning takes place excessively.
+    \item Eastern India, being the least developed region shows a constant low AOD trend over the year.
+\end{enumerate}
+There still lacks more dependencies to be put forward, such as AOD variation, based on population distribution based on socio-economic distribution, AOD-rainfall relation, heatwaves occurrences and AOD variations.
+\end{document} 
